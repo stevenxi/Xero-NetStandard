@@ -294,7 +294,7 @@ namespace Xero.NetStandard.OAuth2.Client
         /// <returns>List of Tenants attached to accesstoken</returns>
         public async Task<List<Tenant>> GetConnectionsAsync(IXeroToken xeroToken)
         {
-            using (var requestMessage = new HttpRequestMessage(HttpMethod.Get, $"{xeroConfiguration.XeroApiBaseUri}/connections"))
+            using (var requestMessage = new HttpRequestMessage(System.Net.Http.HttpMethod.Get, $"{xeroConfiguration.XeroApiBaseUri}/connections"))
             {
                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", xeroToken.AccessToken);
 
@@ -318,7 +318,7 @@ namespace Xero.NetStandard.OAuth2.Client
         /// <returns>List of Tenants attached to accesstoken</returns>
         public async Task DeleteConnectionAsync(IXeroToken xeroToken, Tenant xeroTenant)
         {
-            using (var requestMessage = new HttpRequestMessage(HttpMethod.Delete, $"{xeroConfiguration.XeroApiBaseUri}/connections" + "/" + xeroTenant.id))
+            using (var requestMessage = new HttpRequestMessage(System.Net.Http.HttpMethod.Delete, $"{xeroConfiguration.XeroApiBaseUri}/connections" + "/" + xeroTenant.id))
             {
                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", xeroToken.AccessToken);
 

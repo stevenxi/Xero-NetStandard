@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Xero.NetStandard.OAuth2Client</PackageId>
+    <PackageId>Xero.NetStandard.OAuth2Client-UDIFork</PackageId>
     <Version>1.6.0</Version>
     <Authors>Xero</Authors>
     <Company>Xero</Company>
@@ -16,5 +16,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.2" />
     <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+    <PackageReference Include="Xero.NetStandard.OAuth2" Version="8.1.0" />
   </ItemGroup>
 </Project>

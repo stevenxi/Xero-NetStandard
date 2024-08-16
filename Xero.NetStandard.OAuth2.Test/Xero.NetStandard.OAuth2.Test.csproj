@@ -14,6 +14,7 @@
     <PackageReference Include="JsonSubTypes" Version="1.5.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="Xero.NetStandard.OAuth2" Version="8.1.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <PackageReference Include="RestSharp" Version="110.2.0" />
@@ -26,10 +27,6 @@
     <PackageReference Include="AutoBogus" Version="2.7.4" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xero.NetStandard.OAuth2\Xero.NetStandard.OAuth2.csproj">
-      <Project>{18E34663-C33F-4443-9638-A2B55E1435B9}</Project>
-      <Name>Xero.NetStandard.OAuth2</Name>
-    </ProjectReference>
     <Content Include="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
